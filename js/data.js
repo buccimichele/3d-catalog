@@ -2,7 +2,7 @@ const CONTACT = {
   email: "michelebucci388@gmail.com",
   telegram: "https://t.me/michelebuccii",
   footerMessage:
-    "Non hai trovato quello che cercavi? Contattami!",
+    "Cerchi qualcosa di specifico? Contattami:",
 };
 
 const CATEGORIES = [
