@@ -18,15 +18,11 @@ const CREATIONS = [
   {
     title: "Portapenne Pinza Freni AMG",
     category: "funzionali",
-    description:
-      "Portapenne stampato in 3D, ispirato alla pinza freni AMG. Ideale per scrivanie di appassionati di auto sportive.",
-    images: ["portapenneamg1.jpg", "portapenneamg2.jpg", "portapenneamg3.jpg"],
+    images: ["images/portapenneamg1.jpg", "images/portapenneamg2.jpg", "images/portapenneamg3.jpg"],
   },
   {
-    title: "Ingranaggio maggiorato",
+    title: "Test",
     category: "funzionali",
-    description:
-      "Sostituto di ricambio per un meccanismo di trasmissione, ridisegnato con dente più spesso per resistere meglio all'usura.",
     images: ["images/gear-1.svg", "images/gear-2.svg", "images/gear-3.svg"],
   },
 ];

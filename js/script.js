@@ -70,7 +70,6 @@
         <div class="card-body">
           <p class="card-eyebrow">${categoryLabel(item.category)}</p>
           <h3 class="card-title">${item.title}</h3>
-          <p class="card-desc">${item.description}</p>
         </div>
       `;
       card.addEventListener("click", () => openLightbox(item));
@@ -129,7 +128,6 @@
       <div class="lightbox-info">
         <p class="card-eyebrow">${categoryLabel(item.category)}</p>
         <h3 class="card-title" style="font-size:1.7rem;">${item.title}</h3>
-        <p class="card-desc" style="-webkit-line-clamp:unset;">${item.description}</p>
         ${
           hasMultiple
             ? `<div class="thumb-strip">${images
