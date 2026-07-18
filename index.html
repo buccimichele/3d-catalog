@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catalogo creazioni 3D</title>
+  <meta name="description" content="Catalogo espositivo di creazioni stampate in 3D." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="filters filters-top" id="filters" aria-label="Filtra per categoria"></nav>
+
+  <main class="gallery" id="gallery"></main>
+
+  <footer class="site-footer">
+    <p class="footer-message" id="footer-message"></p>
+    <p class="footer-contacts" id="footer-contacts"></p>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Chiudi">&times;</button>
+    <div class="lightbox-panel" id="lightbox-panel"></div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
