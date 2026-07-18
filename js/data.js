@@ -20,9 +20,4 @@ const CREATIONS = [
     category: "funzionali",
     images: ["images/portapenneamg1.jpg", "images/portapenneamg2.jpg", "images/portapenneamg3.jpg"],
   },
-  {
-    title: "Test",
-    category: "funzionali",
-    images: ["images/gear-1.svg", "images/gear-2.svg", "images/gear-3.svg"],
-  },
 ];
