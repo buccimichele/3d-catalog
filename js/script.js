@@ -10,7 +10,6 @@
   let currentItem = null;
   let currentPhotoIndex = 0;
 
-  // ---- Filtri categoria ----
   function renderFilters() {
     const all = document.createElement("button");
     all.className = "filter-chip active";
@@ -44,7 +43,6 @@
     return item.images && item.images.length ? item.images[0] : "";
   }
 
-  // ---- Griglia dei pezzi ----
   function renderGallery() {
     galleryEl.innerHTML = "";
     const items =
@@ -84,7 +82,6 @@
     });
   }
 
-  // Rivela ogni scheda quando entra nel viewport, come se venisse stampata al momento
   let observer;
   function observeCard(card) {
     if (!observer) {
@@ -103,7 +100,6 @@
     observer.observe(card);
   }
 
-  // ---- Lightbox con galleria foto ----
   function openLightbox(item) {
     currentItem = item;
     currentPhotoIndex = 0;
@@ -188,7 +184,6 @@
     if (e.key === "ArrowRight" && currentItem && currentItem.images.length > 1) stepPhoto(1);
   });
 
-  // ---- Footer ----
   function renderFooter() {
     document.getElementById("footer-message").textContent = CONTACT.footerMessage;
     document.getElementById("footer-contacts").innerHTML = `
@@ -198,7 +193,6 @@
     `;
   }
 
-  // ---- Avvio ----
   renderFilters();
   renderGallery();
   renderFooter();
