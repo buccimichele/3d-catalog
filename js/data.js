@@ -11,6 +11,7 @@ const CATEGORIES = [
   { id: "quadri", label: "Quadri e Poster" },
   { id: "fermalibri", label: "Fermalibri" },
   { id: "connectibles", label: "Connectibles" },
+  { id: "calcio", label: "Calcio" },
   { id: "lifesize", label: "Life Size" },
 ];
 
@@ -59,5 +60,30 @@ const CREATIONS = [
     title: "Kratos | Connectibles",
     category: "connectibles",
     images: ["images/connectibleskratos1.png", "images/connectibleskratos2.JPG", "images/connectibleskratos3.JPG"],
+  },
+  {
+    title: "Master Sword Distrutta | The legend of Zelda Tears of the Kingdom",
+    category: "decorativi",
+    images: ["images/brokenmastersword1.JPG", "images/brokenmastersword2.JPG"],
+  },
+  {
+    title: "Portatarga Kukirin G4",
+    category: "funzionali",
+    images: ["images/kukiring4portatarga1.JPG", "images/kukiring4portatarga2.JPG", "images/kukiring4portatarga3.JPG"],
+  },
+  {
+    title: "Logo Inter",
+    category: "calcio",
+    images: ["images/logointer1.JPG"],
+  },
+  {
+    title: "Trofeo Mondiali Fifa 2026",
+    category: "calcio",
+    images: ["images/trofeomondialififa1.JPG"],
+  },
+  {
+    title: "Portachiavi Trofeo Mondiali Fifa 2026",
+    category: "calcio",
+    images: ["images/trofeomondialififakeychain1.JPG"],
   },
 ];
