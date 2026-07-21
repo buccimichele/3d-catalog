@@ -10,8 +10,9 @@ const CATEGORIES = [
   { id: "decorativi", label: "Decorativi" },
   { id: "quadri", label: "Quadri e Poster" },
   { id: "fermalibri", label: "Fermalibri" },
-  { id: "connectibles", label: "Connectibles" },
+  { id: "animali", label: "Animali" },
   { id: "calcio", label: "Calcio" },
+  { id: "connectibles", label: "Connectibles" },
   { id: "lifesize", label: "Life Size" },
 ];
 
@@ -53,7 +54,7 @@ const CREATIONS = [
   },
   {
     title: "Statuetta Calopsitta",
-    category: "decorativi",
+    category: "animali",
     images: ["images/calopsitta1.png", "images/calopsitta2.JPG", "images/calopsitta3.JPG"],
   },
   {
@@ -93,7 +94,7 @@ const CREATIONS = [
   },
   {
     title: "Statuetta Cardellino",
-    category: "decorativi",
+    category: "animali",
     images: ["images/cardellino1.png", "images/cardellino2.JPG", "images/cardellino3.JPG", "images/cardellino4.JPG"],
   },
   {
