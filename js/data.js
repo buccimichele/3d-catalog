@@ -146,4 +146,49 @@ const CREATIONS = [
     category: "decorativi",
     images: ["images/trofeips1.JPG", "images/trofeips2.JPG"],
   },
+  {
+    title: "Fermalibro Alicia | Expedition 33",
+    category: "fermalibri",
+    images: ["images/aliciabooknook1.JPG", "images/aliciabooknook2.JPG", "images/aliciabooknook3.JPG"],
+  },
+  {
+    title: "Fermalibro Stregatto | Alice nel paese delle meraviglie",
+    category: "fermalibri",
+    images: ["images/cheshirecatbooknook1.JPG", "images/cheshirecatbooknook2.JPG", "images/cheshirecatbooknook3.JPG"],
+  },
+  {
+    title: "Fermalibro Doraemon",
+    category: "fermalibri",
+    images: ["images/doraemonbooknook1.JPG", "images/doraemonbooknook2.JPG", "images/doraemonbooknook3.JPG"],
+  },
+  {
+    title: "Fermalibro Kratos | God Of War",
+    category: "fermalibri",
+    images: ["images/kratosbooknook1.JPG", "images/kratosbooknook2.JPG", "images/kratosbooknook3.JPG", "images/kratosbooknook4.JPG"],
+  },
+  {
+    title: "Fermalibro Marlon Brando | Il Padrino",
+    category: "fermalibri",
+    images: ["images/marlonbooknook1.JPG", "images/marlonbooknook2.JPG", "images/marlonbooknook3.JPG", "images/marlonbooknook4.JPG"],
+  },
+  {
+    title: "Funko Pop One Piece Base Espositiva",
+    category: "funzionali",
+    images: ["images/onepiecefunkobase1.JPEG", "images/onepiecefunkobase2.JPG", "images/onepiecefunkobase3.JPG", "images/onepiecefunkobase4.JPG"],
+  },
+  {
+    title: "Quadro Super Mario",
+    category: "quadri",
+    images: ["images/quadrosupermario1.JPG", "images/quadrosupermario2.JPG"],
+  },
+  {
+    title: "Statue Charmander, Charmeleon, Charizard Pokémon Voronoi",
+    category: "decorativi",
+    images: ["images/charizardvoronoi1.jpg"],
+  },
+  {
+    title: "Logo God Of War",
+    category: "decorativi",
+    images: ["images/godofwarlogo1.jpg"],
+  },
 ];
