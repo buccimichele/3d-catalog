@@ -53,11 +53,11 @@ const CREATIONS = [
   {
     title: "Statuetta Calopsitta",
     category: "decorativi",
-    images: ["images/calopsitta1.JPG", "images/calopsitta2.JPG"],
+    images: ["images/calopsitta1.png", "images/calopsitta2.JPG", "images/calopsitta3.JPG"],
   },
   {
     title: "Kratos | Connectibles",
     category: "connectibles",
-    images: ["images/connectibleskratos1.JPG", "images/connectibleskratos2.JPG"],
+    images: ["images/connectibleskratos1.png", "images/connectibleskratos2.JPG", "images/connectibleskratos3.JPG"],
   },
 ];
