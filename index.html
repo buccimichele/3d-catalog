@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Catalogo creazioni 3D</title>
-  <meta name="description" content="Catalogo espositivo di creazioni stampate in 3D." />
+  <meta name="description" content="Catalogo espositivo di creazioni stampate in 3D: funzionali, decorativi, quadri, fermalibri e pezzi su richiesta." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
     rel="stylesheet"
   />
 
@@ -17,13 +17,46 @@
 </head>
 <body>
 
+  <header class="hero">
+    <div class="hero-blobs" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
+    </div>
+    <div class="hero-inner">
+      <h1 class="hero-title">Creazioni stampate in 3D</h1>
+      <p class="hero-subtitle">
+        Statue, quadri, oggetti utili e regali su misura.
+      </p>
+      <div class="hero-actions">
+        <a href="#gallery" class="btn btn-primary">Esplora il catalogo</a>
+        <a href="#footer" class="btn btn-ghost">Contattami</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="featured" id="featured" aria-label="Lavori in evidenza">
+    <div class="section-head">
+      <h2 class="section-title">Lavori in evidenza</h2>
+    </div>
+    <div class="carousel">
+      <button class="carousel-nav carousel-prev" id="featured-prev" aria-label="Precedente">&#8249;</button>
+      <div class="carousel-viewport" id="featured-viewport">
+        <div class="featured-track" id="featured-track"></div>
+      </div>
+      <button class="carousel-nav carousel-next" id="featured-next" aria-label="Successivo">&#8250;</button>
+    </div>
+    <div class="carousel-dots" id="featured-dots"></div>
+  </section>
+
   <nav class="filters filters-top" id="filters" aria-label="Filtra per categoria"></nav>
 
   <main class="gallery" id="gallery"></main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" id="footer">
     <p class="footer-message" id="footer-message"></p>
     <p class="footer-contacts" id="footer-contacts"></p>
+    <p class="footer-fine">© <span id="year"></span></p>
   </footer>
 
   <div class="lightbox" id="lightbox">

@@ -14,8 +14,11 @@ const CATEGORIES = [
   { id: "calcio", label: "Calcio" },
   { id: "connectibles", label: "Connectibles" },
   { id: "lifesize", label: "Life Size" },
+  { id: "cosplay", label: "Cosplay" },
 ];
 
+// featured: true,
+// comingSoon: true,
 const CREATIONS = [
   {
     title: "Portapenne Pinza Freni AMG",
@@ -40,11 +43,12 @@ const CREATIONS = [
   {
     title: "Poster Spider-man 3D",
     category: "quadri",
+    featured: true,
     images: ["images/posterspiderman1.JPG", "images/posterspiderman2.JPG", "images/posterspiderman3.JPG", "images/posterspiderman4.JPG"],
   },
   {
     title: "Hollow Knight Lampada Diorama 3D",
-    category: "decorativi",
+    category: "funzionali",
     images: ["images/hollowlamp1.JPG", "images/hollowlamp2.JPG", "images/hollowlamp3.JPG", "images/hollowlamp4.JPG", "images/hollowlamp5.JPG"],
   },
   {
@@ -135,6 +139,7 @@ const CREATIONS = [
   {
     title: "Requiem Desert Eagle | Resident Evil 9: Requiem",
     category: "decorativi",
+    featured: true,
     images: ["images/requiem1.JPG", "images/requiem2.JPG", "images/requiem3.JPG"],
   },
   {
@@ -191,5 +196,43 @@ const CREATIONS = [
     title: "Logo God Of War",
     category: "decorativi",
     images: ["images/godofwarlogo1.jpg"],
+  },
+  {
+    title: "All Might Vs All For One United States Of Smash | My Hero Academia Diorama",
+    category: "decorativi",
+    featured: true,
+    images: ["images/allmightvsafo1.jpg", "images/allmightvsafo2.jpg", "images/allmightvsafo3.jpg", "images/allmightvsafo4.jpg", "images/allmightvsafo5.jpg", "images/allmightvsafo6.jpg"],
+  },
+  {
+    title: "Big Walk Character",
+    category: "decorativi",
+    images: ["images/bigwalkguy1.jpg"],
+  },
+  {
+    title: "Carta Pokemon 3D Charmander",
+    category: "decorativi",
+    featured: true,
+    images: ["images/charmander3dcard1.jpg", "images/charmander3dcard2.jpg", "images/charmander3dcard3.jpg", "images/charmander3dcard4.jpg", "images/charmander3dcard5.jpg", "images/charmander3dcard6.jpg"],
+  },
+  {
+    title: "Life Size Insomniac Spider-Man",
+    category: "lifesize",
+    featured: true,
+    images: ["images/spidermanlifesize1.jpeg", "images/spidermanlifesize2.jpeg", "images/spidermanlifesize3.jpg", "images/spidermanlifesize4.jpeg"],
+  },
+  {
+    title: "Corna da diavolo Cosplay",
+    category: "cosplay",
+    images: ["images/cosplayhorns1.png", "images/cosplayhorns2.jpeg"],
+  },
+  {
+    title: "Insegne Scrivania per Programmatori",
+    category: "decorativi",
+    images: ["images/programmersdesksign1.jpg", "images/programmersdesksign2.jpg", "images/programmersdesksign3.jpg", "images/programmersdesksign4.jpg", "images/programmersdesksign5.jpg", "images/programmersdesksign6.jpg"],
+  },
+  {
+    title: "Fermalibro Clicker | The Last of Us",
+    category: "fermalibri",
+    images: ["images/clickerbooknook1.jpg"],
   },
 ];
