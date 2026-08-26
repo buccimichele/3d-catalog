@@ -96,7 +96,9 @@
   function renderFeatured() {
     if (!featuredEl) return;
 
-    featuredItems = CREATIONS.filter((c) => c.featured);
+    featuredItems = CREATIONS
+      .filter((c) => c.featured)
+      .sort((a, b) => (a.featuredOrder || 0) - (b.featuredOrder || 0));
 
     if (featuredItems.length === 0) {
       document.getElementById("featured")?.remove();
@@ -335,12 +337,13 @@
   function renderGallery() {
     galleryEl.innerHTML = "";
 
-    const items =
+    const items = (
       activeCategory === "all"
         ? CREATIONS
         : CREATIONS.filter(
             (c) => c.category === activeCategory
-          );
+          )
+    ).slice().reverse();
 
     if (items.length === 0) {
       galleryEl.innerHTML = `

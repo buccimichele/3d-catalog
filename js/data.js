@@ -15,10 +15,12 @@ const CATEGORIES = [
   { id: "connectibles", label: "Connectibles" },
   { id: "lifesize", label: "Life Size" },
   { id: "cosplay", label: "Cosplay" },
+  { id: "fidget", label: "Fidget" },
 ];
 
 // featured: true,
 // comingSoon: true,
+// featuredOrder: 1,
 const CREATIONS = [
   {
     title: "Portapenne Pinza Freni AMG",
@@ -44,6 +46,7 @@ const CREATIONS = [
     title: "Poster Spider-man 3D",
     category: "quadri",
     featured: true,
+    featuredOrder: 2,
     images: ["images/posterspiderman1.JPG", "images/posterspiderman2.JPG", "images/posterspiderman3.JPG", "images/posterspiderman4.JPG"],
   },
   {
@@ -140,6 +143,7 @@ const CREATIONS = [
     title: "Requiem Desert Eagle | Resident Evil 9: Requiem",
     category: "decorativi",
     featured: true,
+    featuredOrder: 4,
     images: ["images/requiem1.JPG", "images/requiem2.JPG", "images/requiem3.JPG"],
   },
   {
@@ -201,6 +205,7 @@ const CREATIONS = [
     title: "All Might Vs All For One United States Of Smash | My Hero Academia Diorama",
     category: "decorativi",
     featured: true,
+    featuredOrder: 3,
     images: ["images/allmightvsafo1.JPG", "images/allmightvsafo2.JPG", "images/allmightvsafo3.JPG", "images/allmightvsafo4.JPG", "images/allmightvsafo5.JPG", "images/allmightvsafo6.JPG"],
   },
   {
@@ -212,12 +217,14 @@ const CREATIONS = [
     title: "Carta Pokemon 3D Charmander",
     category: "decorativi",
     featured: true,
+    featuredOrder: 5,
     images: ["images/charmander3dcard1.JPG", "images/charmander3dcard2.JPG", "images/charmander3dcard3.JPG", "images/charmander3dcard4.JPG", "images/charmander3dcard5.JPG", "images/charmander3dcard6.JPG"],
   },
   {
     title: "Life Size Insomniac Spider-Man",
     category: "lifesize",
     featured: true,
+    featuredOrder: 1,
     images: ["images/spidermanlifesize1.JPEG", "images/spidermanlifesize2.JPEG", "images/spidermanlifesize3.jpg", "images/spidermanlifesize4.JPEG"],
   },
   {
@@ -234,5 +241,30 @@ const CREATIONS = [
     title: "Fermalibro Clicker | The Last of Us",
     category: "fermalibri",
     images: ["images/clickerbooknook1.jpg"],
+  },
+  {
+    title: "Poster Insomniac Wolverine 3D",
+    category: "quadri",
+    images: ["images/posterwolverine1.jpg", "images/posterwolverine2.jpg", "images/posterwolverine3.jpg", "images/posterwolverine4.jpg"],
+  },
+  {
+    title: "Spyro The Dragon",
+    category: "decorativi",
+    images: ["images/spyrothedragon1.jpg", "images/spyrothedragon2.jpg"],
+  },
+  {
+    title: "Sottobicchiere Ditto Pokémon",
+    category: "funzionali",
+    images: ["images/dittocupholder1.jpg"],
+  },
+  {
+    title: "Giocattolo Fidget Bao",
+    category: "fidget",
+    images: ["images/fidgetbao1.jpg", "images/fidgetbao2.jpg", "images/fidgetbao3.jpg"],
+  },
+  {
+    title: "Nome 3D per Penne e Matite",
+    category: "funzionali",
+    images: ["images/pennames1.jpg", "images/pennames2.jpg"],
   },
 ];
