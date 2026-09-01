@@ -1,8 +1,19 @@
+const SITE = {
+  name: "Skill3dLab",
+  piva: "13502810016",
+};
+
 const CONTACT = {
   email: "michelebucci388@gmail.com",
   telegram: "https://t.me/michelebuccii",
+  vinted: "https://www.vinted.it/member/69708504",
+  tiktok: "https://www.tiktok.com/@skill3dlab",
   footerMessage:
-    "Cerchi qualcosa di specifico? Contattami:",
+    "Cercavi qualcosa e non lo hai trovato? Contattami:",
+  productContact:
+    "Contattami per prezzo, dettagli e dimensioni personalizzabili o se hai un'idea che vuoi realizzare!:",
+  privacyNote:
+    "I dati che mi invii via email, Telegram o Vinted (ad esempio nome e richiesta) vengono utilizzati solo per risponderti e organizzare l'ordine, e non vengono ceduti a terzi né usati per altri scopi.",
 };
 
 const CATEGORIES = [

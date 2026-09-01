@@ -1,6 +1,17 @@
 (function () {
   "use strict";
 
+  const ICONS = {
+    mail:
+      `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="1.6"/><path d="m4.5 6.5 7.5 6.2 7.5-6.2"/></svg>`,
+    telegram:
+      `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 4.5 3 11.6l6.1 2.1M21 4.5 15.2 20l-6.1-6.3M21 4.5 9.1 13.7"/></svg>`,
+    vinted:
+      `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h4l3 12 3-12h4L14.5 19h-5Z"/></svg>`,
+    tiktok:
+      `<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M14 3.5c.7 1.9 2.1 3.1 4.2 3.3v2.6c-1.5 0-2.9-.4-4.2-1.3v6.1a5.4 5.4 0 1 1-5.4-5.4c.3 0 .6 0 .9.1v2.6a2.8 2.8 0 1 0 2 2.7V3.5Z"/></svg>`,
+  };
+
   const galleryEl = document.getElementById("gallery");
   const filtersEl = document.getElementById("filters");
   const featuredEl = document.getElementById("featured-track");
@@ -42,10 +53,6 @@
     `;
   }
 
-  /* ===========================================================
-     FILTRI
-     =========================================================== */
-
   function renderFilters() {
     filtersEl.innerHTML = "";
 
@@ -80,18 +87,19 @@
 
       renderGallery();
 
-      document
-        .getElementById("gallery")
-        .scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
+      const filtersOffset =
+        filtersEl.getBoundingClientRect().height + 16;
+
+      const galleryTop =
+        galleryEl.getBoundingClientRect().top +
+        window.scrollY;
+
+      window.scrollTo({
+        top: galleryTop - filtersOffset,
+        behavior: "smooth"
+      });
     });
   }
-
-  /* ===========================================================
-     CAROSELLO LAVORI IN EVIDENZA
-     =========================================================== */
 
   function renderFeatured() {
     if (!featuredEl) return;
@@ -134,12 +142,6 @@
                 />
               `
           }
-
-          ${
-            item.comingSoon
-              ? `<span class="ribbon">In arrivo</span>`
-              : `<span class="ribbon ribbon-live">In evidenza</span>`
-          }
         </div>
 
         <div class="feature-body">
@@ -169,10 +171,6 @@
       featuredEl.appendChild(card);
     });
 
-    /*
-      Le frecce vengono collegate una sola volta.
-    */
-
     featuredPrevBtn.onclick = () => {
       goToFeaturedPage(featuredPage - 1);
     };
@@ -180,11 +178,6 @@
     featuredNextBtn.onclick = () => {
       goToFeaturedPage(featuredPage + 1);
     };
-
-    /*
-      Quando l'utente trascina manualmente,
-      aggiorniamo pagina e pallini.
-    */
 
     let scrollTimer;
 
@@ -195,11 +188,6 @@
         syncFeaturedPage();
       }, 80);
     });
-
-    /*
-      Quando cambia la dimensione dello schermo,
-      ricalcoliamo tutto.
-    */
 
     let resizeTimer;
 
@@ -215,14 +203,6 @@
     renderFeaturedDots();
     syncFeaturedPage();
   }
-
-  /*
-    Quante card sono visibili?
-
-    Mobile  -> 1
-    Tablet  -> 3
-    Desktop -> 5
-  */
 
   function itemsPerView() {
     if (window.innerWidth < 700) {
@@ -329,10 +309,6 @@
       }
     );
   }
-
-  /* ===========================================================
-     GALLERIA
-     =========================================================== */
 
   function renderGallery() {
     galleryEl.innerHTML = "";
@@ -466,10 +442,6 @@
 
     observer.observe(card);
   }
-
-  /* ===========================================================
-     LIGHTBOX
-     =========================================================== */
 
   function openLightbox(item) {
     currentItem = item;
@@ -608,7 +580,10 @@
 
         <p class="lightbox-contact">
 
-          Per informazioni:
+          <span class="lightbox-contact-lead">
+            ${CONTACT.productContact}
+          </span>
+
           <br>
 
           <a href="mailto:${CONTACT.email}">
@@ -623,6 +598,16 @@
             rel="noopener"
           >
             TELEGRAM: @michelebuccii
+          </a>
+
+          <br>
+
+          <a
+            href="${CONTACT.vinted}"
+            target="_blank"
+            rel="noopener"
+          >
+            VINTED: ${SITE.name}
           </a>
 
         </p>
@@ -721,10 +706,6 @@
     }
   });
 
-  /* ===========================================================
-     FOOTER
-     =========================================================== */
-
   function renderFooter() {
     document.getElementById(
       "footer-message"
@@ -737,7 +718,7 @@
         class="pill-link"
         href="mailto:${CONTACT.email}"
       >
-        ✉ Email
+        ${ICONS.mail} Email
       </a>
 
       <a
@@ -746,32 +727,41 @@
         target="_blank"
         rel="noopener"
       >
-        ✈ Telegram
+        ${ICONS.telegram} Telegram
+      </a>
+
+      <a
+        class="pill-link"
+        href="${CONTACT.vinted}"
+        target="_blank"
+        rel="noopener"
+      >
+        ${ICONS.vinted} Vinted
+      </a>
+
+      <a
+        class="pill-link"
+        href="${CONTACT.tiktok}"
+        target="_blank"
+        rel="noopener"
+      >
+        ${ICONS.tiktok} TikTok
       </a>
     `;
-  }
 
-  /* ===========================================================
-     ANNO
-     =========================================================== */
+    const fineEl = document.getElementById("footer-fine");
 
-  function renderYear() {
-    const el =
-      document.getElementById("year");
-
-    if (el) {
-      el.textContent =
-        new Date().getFullYear();
+    if (fineEl) {
+      fineEl.innerHTML = `
+        © ${new Date().getFullYear()} ${SITE.name}
+        &middot; P.IVA ${SITE.piva}
+        &middot; <a href="privacy.html">Privacy e Cookie</a>
+      `;
     }
   }
-
-  /* ===========================================================
-     INIT
-     =========================================================== */
 
   renderFilters();
   renderFeatured();
   renderGallery();
   renderFooter();
-  renderYear();
 })();
