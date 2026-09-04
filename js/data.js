@@ -4,7 +4,7 @@ const SITE = {
 };
 
 const CONTACT = {
-  email: "michelebucci388@gmail.com",
+  email: "skill3dlab@gmail.com",
   telegram: "https://t.me/michelebuccii",
   vinted: "https://www.vinted.it/member/69708504",
   tiktok: "https://www.tiktok.com/@skill3dlab",
