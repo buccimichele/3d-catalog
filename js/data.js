@@ -57,7 +57,7 @@ const CREATIONS = [
     title: "Poster Spider-man 3D",
     category: "quadri",
     featured: true,
-    featuredOrder: 2,
+    featuredOrder: 3,
     images: ["images/posterspiderman1.JPG", "images/posterspiderman2.JPG", "images/posterspiderman3.JPG", "images/posterspiderman4.JPG"],
   },
   {
@@ -154,7 +154,7 @@ const CREATIONS = [
     title: "Requiem Desert Eagle | Resident Evil 9: Requiem",
     category: "decorativi",
     featured: true,
-    featuredOrder: 4,
+    featuredOrder: 5,
     images: ["images/requiem1.JPG", "images/requiem2.JPG", "images/requiem3.JPG"],
   },
   {
@@ -216,7 +216,7 @@ const CREATIONS = [
     title: "All Might Vs All For One United States Of Smash | My Hero Academia Diorama",
     category: "decorativi",
     featured: true,
-    featuredOrder: 3,
+    featuredOrder: 4,
     images: ["images/allmightvsafo1.JPG", "images/allmightvsafo2.JPG", "images/allmightvsafo3.JPG", "images/allmightvsafo4.JPG", "images/allmightvsafo5.JPG", "images/allmightvsafo6.JPG"],
   },
   {
@@ -228,14 +228,14 @@ const CREATIONS = [
     title: "Carta Pokemon 3D Charmander",
     category: "decorativi",
     featured: true,
-    featuredOrder: 5,
+    featuredOrder: 6,
     images: ["images/charmander3dcard1.JPG", "images/charmander3dcard2.JPG", "images/charmander3dcard3.JPG", "images/charmander3dcard4.JPG", "images/charmander3dcard5.JPG", "images/charmander3dcard6.JPG"],
   },
   {
     title: "Life Size Insomniac Spider-Man",
     category: "lifesize",
     featured: true,
-    featuredOrder: 1,
+    featuredOrder: 2,
     images: ["images/spidermanlifesize1.JPEG", "images/spidermanlifesize2.JPEG", "images/spidermanlifesize3.jpg", "images/spidermanlifesize4.JPEG"],
   },
   {
@@ -277,5 +277,27 @@ const CREATIONS = [
     title: "Nome 3D per Penne e Matite",
     category: "funzionali",
     images: ["images/pennames1.jpg", "images/pennames2.jpg"],
+  },
+  {
+    title: "Misurino per Proteine Tecnologico",
+    category: "funzionali",
+    images: ["images/misurino1.jpg", "images/misurino2.jpg"],
+  },
+  {
+    title: "Logo Gta VI Senza Testo",
+    category: "decorativi",
+    images: ["images/logogtanotext1.jpg", "images/logogtanotext2.jpg"],
+  },
+  {
+    title: "Anello Lanterna Verde",
+    category: "cosplay",
+    images: ["images/anellolanterna1.jpg", "images/anellolanterna2.jpg"],
+  },
+  {
+    title: "Funko Pop Personalizzati | Festa dei Nonni",
+    category: "decorativi",
+    featured: true,
+    featuredOrder: 1,
+    images: ["images/customfunkograndfathers1.jpg", "images/customfunkograndfathers2.jpg", "images/customfunkograndfathers3.jpg"],
   },
 ];
