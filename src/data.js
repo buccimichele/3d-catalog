@@ -110,6 +110,11 @@ export const CREATIONS = [
     images: ["images/kukiring4portatarga1.JPG", "images/kukiring4portatarga2.JPG", "images/kukiring4portatarga3.JPG"]
   },
   {
+    title: "Portatarga Kukirin G2 e G2 PRO",
+    category: "funzionali",
+    images: ["images/kukiring2portatarga1.png", "images/kukiring2portatarga2.png"]
+  },
+  {
     title: "Logo Inter",
     category: "calcio",
     images: ["images/logointer1.JPG"]
@@ -330,7 +335,7 @@ export const CREATIONS = [
     images: ["images/posterwolverine1.jpg", "images/posterwolverine2.jpg", "images/posterwolverine3.jpg", "images/posterwolverine4.jpg"]
   },
   {
-    title: "Spyro The Dragon",
+    title: "Statua Spyro The Dragon Low Poly",
     category: "decorativi",
     images: ["images/spyrothedragon1.jpg", "images/spyrothedragon2.jpg"]
   },
