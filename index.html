@@ -6,7 +6,6 @@
   <title>Skill3dLab</title>
   <meta name="description" content="Skill3dLab — catalogo di creazioni stampate in 3D: oggetti funzionali, decorativi, quadri, fermalibri, cosplay, life size e pezzi personalizzati." />
 
-  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="images/logomini.svg" />
   <link rel="alternate icon" href="images/favicon.ico" />
   <link rel="apple-touch-icon" href="images/favicon.ico" />
@@ -17,59 +16,23 @@
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
     rel="stylesheet"
   />
-
-  <link rel="stylesheet" href="css/style.css?v=5" />
 </head>
 <body>
-
-  <header class="hero">
-    <div class="hero-blobs" aria-hidden="true">
-      <span class="blob blob-1"></span>
-      <span class="blob blob-2"></span>
-      <span class="blob blob-3"></span>
-    </div>
-    <div class="hero-inner">
-      <img src="images/logo.svg" alt="Skill3dLab" class="hero-logo" />
-      <p class="hero-subtitle">
-        Shaping your Ideas
-      </p>
-      <div class="hero-actions">
-        <a href="#gallery" class="btn btn-primary">Esplora il catalogo</a>
-        <a href="#footer" class="btn btn-ghost">Contattami</a>
-      </div>
-    </div>
-  </header>
-
-  <section class="featured" id="featured" aria-label="Lavori in evidenza">
-    <div class="section-head">
-      <h2 class="section-title">Lavori in evidenza</h2>
-    </div>
-    <div class="carousel">
-      <button class="carousel-nav carousel-prev" id="featured-prev" aria-label="Precedente">&#8249;</button>
-      <div class="carousel-viewport" id="featured-viewport">
-        <div class="featured-track" id="featured-track"></div>
-      </div>
-      <button class="carousel-nav carousel-next" id="featured-next" aria-label="Successivo">&#8250;</button>
-    </div>
-    <div class="carousel-dots" id="featured-dots"></div>
-  </section>
-
-  <nav class="filters filters-top" id="filters" aria-label="Filtra per categoria"></nav>
-
-  <main class="gallery" id="gallery"></main>
-
-  <footer class="site-footer" id="footer">
-    <p class="footer-message" id="footer-message"></p>
-    <p class="footer-contacts" id="footer-contacts"></p>
-    <p class="footer-fine" id="footer-fine"></p>
-  </footer>
-
-  <div class="lightbox" id="lightbox">
-    <button class="lightbox-close" id="lightbox-close" aria-label="Chiudi">&times;</button>
-    <div class="lightbox-panel" id="lightbox-panel"></div>
-  </div>
-
-  <script src="js/data.js?v=5"></script>
-  <script src="js/script.js?v=5"></script>
+  <script type="text/javascript">
+    (function (l) {
+      if (l.search[1] === "/") {
+        var decoded = l.search
+          .slice(1)
+          .split("&")
+          .map(function (s) {
+            return s.replace(/~and~/g, "&");
+          })
+          .join("?");
+        window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+      }
+    })(window.location);
+  </script>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
