@@ -43,6 +43,7 @@ export const CREATIONS = [
   {
     title: "Poster Spider-man Venom 3D",
     category: "quadri",
+    featured: true,
     images: [
       "images/postervenom1.JPG",
       "images/postervenom2.JPG",
@@ -54,19 +55,14 @@ export const CREATIONS = [
   {
     title: "Poster Absolute Batman 3D",
     category: "quadri",
+    featured: true,
     images: ["images/posterbatman1.JPG", "images/posterbatman2.JPG", "images/posterbatman3.JPG", "images/posterbatman4.JPG"]
   },
   {
     title: "Poster Spider-man 3D",
     category: "quadri",
     featured: true,
-    featuredOrder: 3,
-    images: [
-      "images/posterspiderman1.JPG",
-      "images/posterspiderman2.JPG",
-      "images/posterspiderman3.JPG",
-      "images/posterspiderman4.JPG"
-    ]
+    images: ["images/posterspiderman1.JPG","images/posterspiderman2.JPG","images/posterspiderman3.JPG","images/posterspiderman4.JPG"]
   },
   {
     title: "Hollow Knight Lampada Diorama 3D",
@@ -183,7 +179,6 @@ export const CREATIONS = [
     title: "Requiem Desert Eagle | Resident Evil 9: Requiem",
     category: "decorativi",
     featured: true,
-    featuredOrder: 5,
     images: ["images/requiem1.JPG", "images/requiem2.JPG", "images/requiem3.JPG"]
   },
   {
@@ -200,6 +195,7 @@ export const CREATIONS = [
   {
     title: "Trofei Playstation",
     category: "decorativi",
+    featured: true,
     images: ["images/trofeips1.JPG", "images/trofeips2.JPG"]
   },
   {
@@ -266,7 +262,6 @@ export const CREATIONS = [
     title: "All Might Vs All For One United States Of Smash | My Hero Academia Diorama",
     category: "decorativi",
     featured: true,
-    featuredOrder: 4,
     images: [
       "images/allmightvsafo1.JPG",
       "images/allmightvsafo2.JPG",
@@ -285,7 +280,6 @@ export const CREATIONS = [
     title: "Carta Pokemon 3D Charmander",
     category: "decorativi",
     featured: true,
-    featuredOrder: 6,
     images: [
       "images/charmander3dcard1.JPG",
       "images/charmander3dcard2.JPG",
@@ -299,7 +293,6 @@ export const CREATIONS = [
     title: "Life Size Insomniac Spider-Man",
     category: "lifesize",
     featured: true,
-    featuredOrder: 2,
     images: [
       "images/spidermanlifesize1.JPEG",
       "images/spidermanlifesize2.JPEG",
@@ -332,6 +325,7 @@ export const CREATIONS = [
   {
     title: "Poster Insomniac Wolverine 3D",
     category: "quadri",
+    featured: true,
     images: ["images/posterwolverine1.jpg", "images/posterwolverine2.jpg", "images/posterwolverine3.jpg", "images/posterwolverine4.jpg"]
   },
   {
@@ -373,7 +367,12 @@ export const CREATIONS = [
     title: "Funko Pop Personalizzati | Festa dei Nonni",
     category: "decorativi",
     featured: true,
-    featuredOrder: 1,
     images: ["images/customfunkograndfathers1.jpg", "images/customfunkograndfathers2.jpg", "images/customfunkograndfathers3.jpg"]
-  }
+  },
+  {
+    title: "Poster Spider-man Venom 3D 85CM",
+    category: "quadri",
+    featured: true,
+    images: ["images/postervenombig1.jpg","images/postervenombig2.jpg","images/postervenombig3.jpg","images/postervenombig4.jpg","images/postervenombig5.jpg"]
+  },
 ];

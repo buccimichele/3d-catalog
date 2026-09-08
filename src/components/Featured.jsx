@@ -1,118 +1,98 @@
-import { useEffect, useRef, useState } from "react";
-import { CREATIONS, CATEGORIES } from "../data";
+import { useEffect, useMemo, useState } from "react";
+import DriftWall from "./DriftWall";
+import { CREATIONS } from "../data";
 
-function categoryLabel(id) {
-  const found = CATEGORIES.find((c) => c.id === id);
-  return found ? found.label : id;
-}
+function useResponsiveTile() {
+  const [tile, setTile] = useState({
+    width: 280,
+    columns: 5,
+  });
 
-function itemsPerView(width) {
-  if (width < 700) return 1;
-  if (width < 1180) return 3;
-  return 5;
+  useEffect(() => {
+    const update = () => {
+      const mobile = window.innerWidth < 720;
+
+      setTile({
+        width: mobile ? 150 : 280,
+        columns: mobile ? 3 : 5,
+      });
+    };
+
+    update();
+
+    window.addEventListener("resize", update);
+
+    return () => {
+      window.removeEventListener("resize", update);
+    };
+  }, []);
+
+  return tile;
 }
 
 export default function Featured({ onSelect }) {
-  const items = CREATIONS.filter((c) => c.featured).sort(
-    (a, b) => (a.featuredOrder || 0) - (b.featuredOrder || 0)
-  );
+  const items = useMemo(() => {
+    return CREATIONS
+      .filter((c) => c.featured)
+      .sort(
+        (a, b) =>
+          (a.featuredOrder || 0) -
+          (b.featuredOrder || 0)
+      );
+  }, []);
 
-  const viewportRef = useRef(null);
-  const [page, setPage] = useState(0);
-  const [pages, setPages] = useState(1);
+  const {
+    width: tileWidth,
+    columns,
+  } = useResponsiveTile();
 
-  useEffect(() => {
-    const update = () => setPages(Math.max(1, Math.ceil(items.length / itemsPerView(window.innerWidth))));
-    update();
-    window.addEventListener("resize", update);
-    return () => window.removeEventListener("resize", update);
-  }, [items.length]);
-
-  const goTo = (p) => {
-    const viewport = viewportRef.current;
-    if (!viewport) return;
-    const clamped = Math.max(0, Math.min(p, pages - 1));
-    viewport.scrollTo({ left: clamped * viewport.clientWidth, behavior: "smooth" });
-    setPage(clamped);
-  };
-
-  const handleScroll = () => {
-    const viewport = viewportRef.current;
-    if (!viewport || !viewport.clientWidth) return;
-    const p = Math.round(viewport.scrollLeft / viewport.clientWidth);
-    setPage(Math.max(0, Math.min(p, pages - 1)));
-  };
-
-  if (items.length === 0) return null;
+  if (items.length === 0) {
+    return null;
+  }
 
   return (
-    <section className="featured" id="featured" aria-label="Lavori in evidenza">
+    <section
+      className="featured"
+      id="featured"
+      aria-label="Lavori in evidenza"
+    >
       <div className="section-head">
-        <h2 className="section-title">Lavori in evidenza</h2>
+        <h2 className="section-title">
+          Lavori in evidenza
+        </h2>
       </div>
 
-      <div className="carousel">
-        <button
-          className="carousel-nav carousel-prev"
-          aria-label="Precedente"
-          style={{ visibility: pages > 1 ? "visible" : "hidden" }}
-          onClick={() => goTo(page - 1)}
-        >
-          &#8249;
-        </button>
+      <div className="featured-wall">
+        <DriftWall
+          items={items}
+          columns={columns}
+          tileWidth={tileWidth}
 
-        <div className="carousel-viewport" ref={viewportRef} onScroll={handleScroll}>
-          <div className="featured-track">
-            {items.map((item) => (
-              <article
-                key={item.title}
-                className="feature-card"
-                data-category={item.category}
-                tabIndex={0}
-                role="button"
-                aria-label={`Apri i dettagli di ${item.title}`}
-                onClick={() => onSelect(item)}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" || e.key === " ") {
-                    e.preventDefault();
-                    onSelect(item);
-                  }
-                }}
-              >
-                <div className="feature-media">
-                  <img src={item.images[0]} alt={item.title} loading="lazy" />
-                </div>
-                <div className="feature-body">
-                  <p className="card-eyebrow">{categoryLabel(item.category)}</p>
-                  <h3 className="feature-title">{item.title}</h3>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
+          gap={24}
+          radius={22}
 
-        <button
-          className="carousel-nav carousel-next"
-          aria-label="Successivo"
-          style={{ visibility: pages > 1 ? "visible" : "hidden" }}
-          onClick={() => goTo(page + 1)}
-        >
-          &#8250;
-        </button>
+          tilt={9}
+          turn={-7}
+
+          perspective={1600}
+          depth={90}
+
+          speed={24}
+          direction="up"
+
+          variance={0.4}
+          parallax={0.7}
+
+          lift={36}
+
+          fade={0.32}
+          dim={0.88}
+
+          overlayColor="#121019"
+
+          onSelect={onSelect}
+        />
       </div>
-
-      {pages > 1 && (
-        <div className="carousel-dots">
-          {Array.from({ length: pages }).map((_, i) => (
-            <button
-              key={i}
-              className={`dot ${i === page ? "active" : ""}`}
-              aria-label={`Vai alla pagina ${i + 1}`}
-              onClick={() => goTo(i)}
-            />
-          ))}
-        </div>
-      )}
     </section>
   );
 }

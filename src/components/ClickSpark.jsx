@@ -18,33 +18,14 @@ export default function ClickSpark({
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const parent = canvas.parentElement;
-    if (!parent) return;
-
-    let resizeTimeout;
-
     const resizeCanvas = () => {
-      const { width, height } = parent.getBoundingClientRect();
-      if (canvas.width !== width || canvas.height !== height) {
-        canvas.width = width;
-        canvas.height = height;
-      }
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
     };
-
-    const handleResize = () => {
-      clearTimeout(resizeTimeout);
-      resizeTimeout = setTimeout(resizeCanvas, 100);
-    };
-
-    const ro = new ResizeObserver(handleResize);
-    ro.observe(parent);
 
     resizeCanvas();
-
-    return () => {
-      ro.disconnect();
-      clearTimeout(resizeTimeout);
-    };
+    window.addEventListener("resize", resizeCanvas);
+    return () => window.removeEventListener("resize", resizeCanvas);
   }, []);
 
   const easeFunc = useCallback(
@@ -113,47 +94,39 @@ export default function ClickSpark({
     };
   }, [sparkColor, sparkSize, sparkRadius, sparkCount, duration, easeFunc, extraScale]);
 
-  const handleClick = (e) => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const rect = canvas.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+  useEffect(() => {
+    const handleClick = (e) => {
+      if (e.button !== 0) return;
 
-    const now = performance.now();
-    const newSparks = Array.from({ length: sparkCount }, (_, i) => ({
-      x,
-      y,
-      angle: (2 * Math.PI * i) / sparkCount,
-      startTime: now
-    }));
+      const now = performance.now();
+      const newSparks = Array.from({ length: sparkCount }, (_, i) => ({
+        x: e.clientX,
+        y: e.clientY,
+        angle: (2 * Math.PI * i) / sparkCount,
+        startTime: now
+      }));
 
-    sparksRef.current.push(...newSparks);
-  };
+      sparksRef.current.push(...newSparks);
+    };
+
+    window.addEventListener("click", handleClick);
+    return () => window.removeEventListener("click", handleClick);
+  }, [sparkCount]);
 
   return (
-    <div
-      style={{
-        position: "relative",
-        width: "100%",
-        minHeight: "100%"
-      }}
-      onClick={handleClick}
-    >
+    <>
       <canvas
         ref={canvasRef}
         style={{
-          width: "100%",
-          height: "100%",
-          display: "block",
-          userSelect: "none",
-          position: "absolute",
-          top: 0,
-          left: 0,
-          pointerEvents: "none"
+          position: "fixed",
+          inset: 0,
+          width: "100vw",
+          height: "100vh",
+          pointerEvents: "none",
+          zIndex: 9999
         }}
       />
       {children}
-    </div>
+    </>
   );
 }

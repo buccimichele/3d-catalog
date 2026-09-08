@@ -18,6 +18,7 @@ function initials(title) {
 function GalleryCard({ item, onSelect }) {
   const ref = useRef(null);
   const [inView, setInView] = useState(false);
+  const [photoIndex, setPhotoIndex] = useState(0);
 
   useEffect(() => {
     const el = ref.current;
@@ -38,7 +39,7 @@ function GalleryCard({ item, onSelect }) {
   }, []);
 
   const photoCount = item.images ? item.images.length : 0;
-  const cover = photoCount ? item.images[0] : null;
+  const cover = photoCount ? item.images[photoIndex] : null;
 
   return (
     <article
@@ -63,6 +64,33 @@ function GalleryCard({ item, onSelect }) {
           <div className="media-placeholder" aria-hidden="true">
             <span>{initials(item.title)}</span>
           </div>
+        )}
+
+        {photoCount > 1 && (
+          <>
+            <button
+              type="button"
+              className="card-nav card-nav-prev"
+              aria-label="Foto precedente"
+              onClick={(e) => {
+                e.stopPropagation();
+                setPhotoIndex((i) => (i - 1 + photoCount) % photoCount);
+              }}
+            >
+              &#8249;
+            </button>
+            <button
+              type="button"
+              className="card-nav card-nav-next"
+              aria-label="Foto successiva"
+              onClick={(e) => {
+                e.stopPropagation();
+                setPhotoIndex((i) => (i + 1) % photoCount);
+              }}
+            >
+              &#8250;
+            </button>
+          </>
         )}
 
         {photoCount > 1 && <span className="photo-badge">{photoCount} foto</span>}

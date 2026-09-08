@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { CATEGORIES, CONTACT, SITE } from "../data";
+import { CATEGORIES, CONTACT } from "../data";
 
 function categoryLabel(id) {
   const found = CATEGORIES.find((c) => c.id === id);
@@ -14,6 +14,15 @@ function initials(title) {
     .map((w) => w[0].toUpperCase())
     .join("");
 }
+
+const mailIcon =
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="1.6"/><path d="m4.5 6.5 7.5 6.2 7.5-6.2"/></svg>';
+const telegramIcon =
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 4.5 3 11.6l6.1 2.1M21 4.5 15.2 20l-6.1-6.3M21 4.5 9.1 13.7"/></svg>';
+const vintedIcon =
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h4l3 12 3-12h4L14.5 19h-5Z"/></svg>';
+const instagramIcon =
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none"/></svg>';
 
 export default function Lightbox({ item, onClose }) {
   const [index, setIndex] = useState(0);
@@ -99,23 +108,41 @@ export default function Lightbox({ item, onClose }) {
             </div>
           )}
 
-          <p className="lightbox-contact">
-            <span className="lightbox-contact-lead">{CONTACT.productContact}</span>
-            <br />
-            <a href={`mailto:${CONTACT.email}`}>EMAIL: {CONTACT.email}</a>
-            <br />
-            <a href={CONTACT.telegram} target="_blank" rel="noopener noreferrer">
-              TELEGRAM: @michelebuccii
-            </a>
-            <br />
-            <a href={CONTACT.vinted} target="_blank" rel="noopener noreferrer">
-              VINTED: {SITE.name}
-            </a>
-            <br />
-            <a href={CONTACT.instagram} target="_blank" rel="noopener noreferrer">
-              INSTAGRAM: @skill3dlab
-            </a>
-          </p>
+          <div className="lightbox-contact">
+            <p className="lightbox-contact-lead">{CONTACT.productContact}</p>
+            <div className="lightbox-social">
+              <a
+                className="lightbox-social-bubble"
+                href={`mailto:${CONTACT.email}`}
+                aria-label="Email"
+                dangerouslySetInnerHTML={{ __html: mailIcon }}
+              />
+              <a
+                className="lightbox-social-bubble"
+                href={CONTACT.telegram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Telegram"
+                dangerouslySetInnerHTML={{ __html: telegramIcon }}
+              />
+              <a
+                className="lightbox-social-bubble"
+                href={CONTACT.vinted}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Vinted"
+                dangerouslySetInnerHTML={{ __html: vintedIcon }}
+              />
+              <a
+                className="lightbox-social-bubble"
+                href={CONTACT.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                dangerouslySetInnerHTML={{ __html: instagramIcon }}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

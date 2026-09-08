@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Aurora from "./Aurora";
 import { CONTACT, SITE } from "../data";
 
 const mailIcon =
@@ -15,47 +16,53 @@ const instagramIcon =
 export default function Footer() {
   return (
     <footer className="site-footer" id="footer">
-      <p className="footer-message">{CONTACT.footerMessage}</p>
+      <div className="footer-aurora" aria-hidden="true">
+        <Aurora colorStops={["#9b7bff", "#ff4fa3", "#ff6b4a"]} amplitude={1.0} blend={0.5} speed={0.5} />
+      </div>
 
-      <p className="footer-contacts">
-        <a
-          className="pill-link"
-          href={`mailto:${CONTACT.email}`}
-          dangerouslySetInnerHTML={{ __html: `${mailIcon} Email` }}
-        />
-        <a
-          className="pill-link"
-          href={CONTACT.telegram}
-          target="_blank"
-          rel="noopener noreferrer"
-          dangerouslySetInnerHTML={{ __html: `${telegramIcon} Telegram` }}
-        />
-        <a
-          className="pill-link"
-          href={CONTACT.vinted}
-          target="_blank"
-          rel="noopener noreferrer"
-          dangerouslySetInnerHTML={{ __html: `${vintedIcon} Vinted` }}
-        />
-        <a
-          className="pill-link"
-          href={CONTACT.tiktok}
-          target="_blank"
-          rel="noopener noreferrer"
-          dangerouslySetInnerHTML={{ __html: `${tiktokIcon} TikTok` }}
-        />
-        <a
-          className="pill-link"
-          href={CONTACT.instagram}
-          target="_blank"
-          rel="noopener noreferrer"
-          dangerouslySetInnerHTML={{ __html: `${instagramIcon} Instagram` }}
-        />
-      </p>
+      <div className="footer-content">
+        <p className="footer-message">{CONTACT.footerMessage}</p>
 
-      <p className="footer-fine">
-        © {new Date().getFullYear()} {SITE.name} &middot; P.IVA {SITE.piva} &middot; <Link to="/contatti">Contatti e Privacy</Link>
-      </p>
+        <p className="footer-contacts">
+          <a
+            className="pill-link"
+            href={`mailto:${CONTACT.email}`}
+            dangerouslySetInnerHTML={{ __html: `${mailIcon} Email` }}
+          />
+          <a
+            className="pill-link"
+            href={CONTACT.telegram}
+            target="_blank"
+            rel="noopener noreferrer"
+            dangerouslySetInnerHTML={{ __html: `${telegramIcon} Telegram` }}
+          />
+          <a
+            className="pill-link"
+            href={CONTACT.vinted}
+            target="_blank"
+            rel="noopener noreferrer"
+            dangerouslySetInnerHTML={{ __html: `${vintedIcon} Vinted` }}
+          />
+          <a
+            className="pill-link"
+            href={CONTACT.tiktok}
+            target="_blank"
+            rel="noopener noreferrer"
+            dangerouslySetInnerHTML={{ __html: `${tiktokIcon} TikTok` }}
+          />
+          <a
+            className="pill-link"
+            href={CONTACT.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            dangerouslySetInnerHTML={{ __html: `${instagramIcon} Instagram` }}
+          />
+        </p>
+
+        <p className="footer-fine">
+          © {new Date().getFullYear()} {SITE.name} &middot; P.IVA {SITE.piva} &middot; <Link to="/contatti">Contatti e Privacy</Link>
+        </p>
+      </div>
     </footer>
   );
 }
