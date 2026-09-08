@@ -1,15 +1,29 @@
 .drift-wall {
-  position: relative;
+  position: absolute;
+
+  top: 50%;
+  left: 0;
 
   width: 100%;
-  height: 100%;
+  /*
+   * Molto più alto del riquadro visibile (che lo ritaglia
+   * con overflow: hidden sul genitore .featured-wall):
+   * questo margine "cieco" dà spazio alle colonne 3D
+   * (inclinate/ruotate) e ai ricalcoli di altezza quando
+   * le foto finiscono di caricare, così non si vedono mai
+   * buchi al bordo. La sfumatura vera e propria è sul
+   * genitore .featured-wall, che ha l'altezza reale
+   * visibile.
+   */
+  height: calc(100% + 1200px);
+  transform: translateY(-50%);
 
   overflow: hidden;
 
   perspective: var(--dw-perspective, 1200px);
   perspective-origin: 50% 50%;
 
-  --dw-tile-w: 200px;
+  --dw-tile-w: 280px;
   --dw-gap: 18px;
   --dw-radius: 14px;
   --dw-lift: 64px;
@@ -17,38 +31,6 @@
   --dw-gray: 0;
   --dw-overlay: #060010;
   --dw-edge: 40%;
-
-  -webkit-mask-image:
-    radial-gradient(
-      ellipse 78% 82% at 50% 46%,
-      #000 var(--dw-edge),
-      transparent 100%
-    ),
-    linear-gradient(
-      to top,
-      transparent 0%,
-      #000 18%,
-      #000 82%,
-      transparent 100%
-    );
-
-  -webkit-mask-composite: source-in;
-
-  mask-image:
-    radial-gradient(
-      ellipse 78% 82% at 50% 46%,
-      #000 var(--dw-edge),
-      transparent 100%
-    ),
-    linear-gradient(
-      to top,
-      transparent 0%,
-      #000 18%,
-      #000 82%,
-      transparent 100%
-    );
-
-  mask-composite: intersect;
 }
 
 

@@ -7,7 +7,7 @@ import Privacy from "./pages/Privacy";
 export default function App() {
   return (
     <BrowserRouter>
-      <ClickSpark sparkColor="#ff6b4a" sparkSize={10} sparkRadius={18} sparkCount={8} duration={450}>
+      <ClickSpark sparkColor="#ffffff" sparkSize={10} sparkRadius={18} sparkCount={8} duration={450}>
         <TopNav />
         <Routes>
           <Route path="/" element={<Home />} />

@@ -19,6 +19,8 @@ const mailIcon =
   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="1.6"/><path d="m4.5 6.5 7.5 6.2 7.5-6.2"/></svg>';
 const telegramIcon =
   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 4.5 3 11.6l6.1 2.1M21 4.5 15.2 20l-6.1-6.3M21 4.5 9.1 13.7"/></svg>';
+const tiktokIcon =
+  '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M14 3.5c.7 1.9 2.1 3.1 4.2 3.3v2.6c-1.5 0-2.9-.4-4.2-1.3v6.1a5.4 5.4 0 1 1-5.4-5.4c.3 0 .6 0 .9.1v2.6a2.8 2.8 0 1 0 2 2.7V3.5Z"/></svg>';
 const vintedIcon =
   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h4l3 12 3-12h4L14.5 19h-5Z"/></svg>';
 const instagramIcon =
@@ -124,6 +126,14 @@ export default function Lightbox({ item, onClose }) {
                 rel="noopener noreferrer"
                 aria-label="Telegram"
                 dangerouslySetInnerHTML={{ __html: telegramIcon }}
+              />
+              <a
+                className="lightbox-social-bubble"
+                href={CONTACT.tiktok}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok"
+                dangerouslySetInnerHTML={{ __html: tiktokIcon }}
               />
               <a
                 className="lightbox-social-bubble"

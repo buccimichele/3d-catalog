@@ -393,20 +393,36 @@ export default function DriftWall({
   ]);
 
   useEffect(() => {
-    offsetsRef.current =
-      columnHeights.map(
-        (height, columnIndex) => {
-          if (!height) return 0;
+    // Le immagini finiscono di caricare in momenti diversi,
+    // quindi columnHeights cambia più volte dopo il mount.
+    // Se ogni volta azzerassimo offset/velocità, la colonna
+    // "salterebbe" di colpo a una nuova posizione proprio
+    // mentre una foto cambia dimensione: è quel salto a dare
+    // l'impressione di un buco o di un'immagine che sparisce.
+    // Impostiamo la posizione di partenza una sola volta per
+    // colonna e poi la lasciamo intatta ai ricalcoli successivi.
+    const previousOffsets = offsetsRef.current;
+    const previousVelocities = velocitiesRef.current;
 
-          return (
-            height *
-            ((columnIndex * 0.37) % 1)
-          );
+    offsetsRef.current = columnHeights.map(
+      (height, columnIndex) => {
+        if (previousOffsets[columnIndex] != null) {
+          return previousOffsets[columnIndex];
         }
-      );
 
-    velocitiesRef.current =
-      columnItems.map(() => 0);
+        if (!height) return 0;
+
+        return (
+          height *
+          ((columnIndex * 0.37) % 1)
+        );
+      }
+    );
+
+    velocitiesRef.current = columnItems.map(
+      (_, columnIndex) =>
+        previousVelocities[columnIndex] || 0
+    );
   }, [
     columnHeights,
     columnItems,

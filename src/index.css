@@ -174,7 +174,41 @@ button {
   width: 100%;
   margin: 0;
   padding: 0;
-  height: clamp(420px, 55vh, 620px);
+  height: clamp(420px, 55vh, 800px);
+  position: relative;
+  overflow: hidden;
+
+  -webkit-mask-image:
+    radial-gradient(
+      ellipse 78% 82% at 50% 46%,
+      #000 68%,
+      transparent 100%
+    ),
+    linear-gradient(
+      to top,
+      transparent 0%,
+      #000 18%,
+      #000 82%,
+      transparent 100%
+    );
+
+  -webkit-mask-composite: source-in;
+
+  mask-image:
+    radial-gradient(
+      ellipse 78% 82% at 50% 46%,
+      #000 68%,
+      transparent 100%
+    ),
+    linear-gradient(
+      to top,
+      transparent 0%,
+      #000 18%,
+      #000 82%,
+      transparent 100%
+    );
+
+  mask-composite: intersect;
 }
 
 .media-placeholder {
