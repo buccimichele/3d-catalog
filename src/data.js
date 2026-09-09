@@ -375,4 +375,10 @@ export const CREATIONS = [
     featured: true,
     images: ["images/postervenombig1.jpg","images/postervenombig2.jpg","images/postervenombig3.jpg","images/postervenombig4.jpg","images/postervenombig5.jpg"]
   },
+  {
+    title: "Espositore Funko Pop Kinder Joy One Piece",
+    category: "decorativi",
+    featured: true,
+    images: ["images/funkoonepieceexposer1.jpg","images/funkoonepieceexposer2.jpg","images/funkoonepieceexposer3.jpg"]
+  },
 ];
