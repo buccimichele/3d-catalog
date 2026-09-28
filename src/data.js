@@ -381,4 +381,49 @@ export const CREATIONS = [
     featured: true,
     images: ["images/funkoonepieceexposer1.jpg","images/funkoonepieceexposer2.jpg","images/funkoonepieceexposer3.jpg"]
   },
+  {
+    title: "Decorazioni per Matita a Forma di Mano",
+    category: "decorativi",
+    images: ["images/pencilcap1.jpg", "images/pencilcap2.jpg"]
+  },
+  {
+    title: "Decorazione Specchio Stile Post Instagram",
+    category: "decorativi",
+    images: ["images/instagrammirror1.jpg"]
+  },
+  {
+    title: "Giocattolo Fidget Sensoriale",
+    category: "fidget",
+    images: ["images/sensoryfidget1.jpg", "images/sensoryfidget2.jpg", "images/sensoryfidget3.jpg"]
+  },
+  {
+    title: "Giocattolo Fidget Clessidra",
+    category: "fidget",
+    images: ["images/hourglassfidget1.jpg", "images/hourglassfidget2.jpg"]
+  },
+  {
+    title: "Giocattolo Fidget Spirale",
+    category: "fidget",
+    images: ["images/spiralfidget1.jpg", "images/spiralfidget2.jpg"]
+  },
+  {
+    title: "Giocattolo Fidget Clicky Ball",
+    category: "fidget",
+    images: ["images/clickerballfidget1.jpg", "images/clickerballfidget2.jpg", "images/clickerballfidget3.jpg"]
+  },
+  {
+    title: "Pietre Spirituali | The Legend Of Zelda Ocarina Of Time",
+    category: "decorativi",
+    images: ["images/ocarinaoftimesacredstones1.jpg", "images/ocarinaoftimesacredstones2.jpg"]
+  },
+  {
+    title: "Etichette per Gabbie per Uccelli | Numeri e Simboli di Allevamento",
+    category: "funzionali",
+    images: ["images/cagetags1.jpg", "images/cagetags2.jpg", "images/cagetags3.jpg", "images/cagetags4.jpg", "images/cagetags5.jpg", "images/cagetags6.jpg"]
+  },
+  {
+    title: "Cover Box ETB 30Th Anniversary Pokémon",
+    category: "funzionali",
+    images: ["images/etbcover30th1.jpg", "images/etbcover30th2.jpg"]
+  },
 ];
