@@ -426,4 +426,9 @@ export const CREATIONS = [
     category: "funzionali",
     images: ["images/etbcover30th1.jpg", "images/etbcover30th2.jpg"]
   },
+  {
+    title: "Statua Blade Il Cacciatore Di Vampiri",
+    category: "decorativi",
+    images: ["images/blade1.jpg", "images/blade2.jpg", "images/blade3.jpg", "images/blade4.jpg"]
+  },
 ];
