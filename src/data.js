@@ -436,4 +436,9 @@ export const CREATIONS = [
     category: "funzionali",
     images: ["images/toploaderbox1.jpg", "images/toploaderbox2.jpg", "images/toploaderbox3.jpg", "images/toploaderbox4.jpg"]
   },
+  {
+    title: "Fermalibro Wolverine",
+    category: "fermalibri",
+    images: ["images/wolverinebooknook1.jpg", "images/wolverinebooknook2.jpg", "images/wolverinebooknook3.jpg", "images/wolverinebooknook4.jpg"]
+  },
 ];
