@@ -431,4 +431,9 @@ export const CREATIONS = [
     category: "decorativi",
     images: ["images/blade1.jpg", "images/blade2.jpg", "images/blade3.jpg", "images/blade4.jpg"]
   },
+  {
+    title: "Box Porta Carte Toploader Pokémon 30Th Anniversary",
+    category: "funzionali",
+    images: ["images/toploaderbox1.jpg", "images/toploaderbox2.jpg", "images/toploaderbox3.jpg", "images/toploaderbox4.jpg"]
+  },
 ];
