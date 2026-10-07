@@ -441,4 +441,9 @@ export const CREATIONS = [
     category: "fermalibri",
     images: ["images/wolverinebooknook1.jpg", "images/wolverinebooknook2.jpg", "images/wolverinebooknook3.jpg", "images/wolverinebooknook4.jpg"]
   },
+  {
+    title: "Guts Berserker Armor Funko Pop",
+    category: "decorativi",
+    images: ["images/gutsfunko1.jpg", "images/gutsfunko2.jpg", "images/gutsfunko3.jpg"]
+  },
 ];
