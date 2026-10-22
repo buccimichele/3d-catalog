@@ -88,7 +88,7 @@ export const CREATIONS = [
   {
     title: "Statuetta Calopsitta",
     category: "animali",
-    images: ["images/calopsitta1.png", "images/calopsitta2.JPG", "images/calopsitta3.JPG"]
+    images: ["images/calopsitta1.jpg", "images/calopsitta2.JPG", "images/calopsitta3.JPG"]
   },
   {
     title: "Kratos | Connectibles",
@@ -133,7 +133,7 @@ export const CREATIONS = [
   {
     title: "Statuetta Cardellino",
     category: "animali",
-    images: ["images/cardellino1.png", "images/cardellino2.JPG", "images/cardellino3.JPG", "images/cardellino4.JPG"]
+    images: ["images/cardellino1.jpg", "images/cardellino2.JPG", "images/cardellino3.JPG", "images/cardellino4.JPG"]
   },
   {
     title: "Statua Crash Bandicoot Low Poly",
