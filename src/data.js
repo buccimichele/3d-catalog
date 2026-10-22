@@ -364,7 +364,7 @@ export const CREATIONS = [
     images: ["images/anellolanterna1.jpg", "images/anellolanterna2.jpg"]
   },
   {
-    title: "Funko Pop Personalizzati | Festa dei Nonni",
+    title: "Funko Pop Personalizzati",
     category: "decorativi",
     featured: true,
     images: ["images/customfunkograndfathers1.jpg", "images/customfunkograndfathers2.jpg", "images/customfunkograndfathers3.jpg"]
@@ -445,5 +445,35 @@ export const CREATIONS = [
     title: "Guts Berserker Armor Funko Pop",
     category: "decorativi",
     images: ["images/gutsfunko1.jpg", "images/gutsfunko2.jpg", "images/gutsfunko3.jpg"]
+  },
+  {
+    title: "Anello Lanterna Verde",
+    category: "cosplay",
+    images: ["images/anellolanternasecondo1.jpg"]
+  },
+  {
+    title: "Anello Lanterna Verde",
+    category: "cosplay",
+    images: ["images/anellolanternaterzo1.jpg", "images/anellolanternaterzo2.jpg"]
+  },
+  {
+    title: "Anello Lanterna Verde",
+    category: "cosplay",
+    images: ["images/anellolanternaquarto1.jpg", "images/anellolanternaquarto2.jpg"]
+  },
+  {
+    title: "Batteria Energetica Lanterna Verde - Oro/Rame",
+    category: "cosplay",
+    images: ["images/greenlantern1.jpg", "images/greenlantern2.jpg", "images/greenlantern3.jpg", "images/greenlantern4.jpg"]
+  },
+  {
+    title: "Macca The Gator - Gta 6 Mascotte",
+    category: "decorativo",
+    images: ["images/maccathegator1.jpg", "images/maccathegator2.jpg", "images/maccathegator3.jpg", "images/maccathegator4.jpg"]
+  },
+  {
+    title: "Statuetta Ada Wong - Resident Evil (17 Cm)",
+    category: "decorativo",
+    images: ["images/adawong1.jpg", "images/adawong2.jpg", "images/adawong3.jpg", "images/adawong4.jpg", "images/adawong5.jpg"]
   },
 ];
