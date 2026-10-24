@@ -468,12 +468,12 @@ export const CREATIONS = [
   },
   {
     title: "Macca The Gator - Gta 6 Mascotte",
-    category: "decorativo",
+    category: "decorativi",
     images: ["images/maccathegator1.jpg", "images/maccathegator2.jpg", "images/maccathegator3.jpg", "images/maccathegator4.jpg"]
   },
   {
     title: "Statuetta Ada Wong - Resident Evil (17 Cm)",
-    category: "decorativo",
+    category: "decorativi",
     images: ["images/adawong1.jpg", "images/adawong2.jpg", "images/adawong3.jpg", "images/adawong4.jpg", "images/adawong5.jpg"]
   },
 ];
