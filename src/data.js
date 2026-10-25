@@ -141,7 +141,7 @@ export const CREATIONS = [
     images: ["images/crashlowpoly1.JPG", "images/crashlowpoly2.JPG"]
   },
   {
-    title: "Medaglie Pokémon Galar - Spada e Scudo",
+    title: "Medaglie Pokémon Galar | Spada e Scudo",
     category: "decorativi",
     images: ["images/galarmedals1.JPG", "images/galarmedals2.JPG", "images/galarmedals3.JPG"]
   },
@@ -462,29 +462,40 @@ export const CREATIONS = [
     images: ["images/anellolanternaquarto1.jpg", "images/anellolanternaquarto2.jpg"]
   },
   {
-    title: "Batteria Energetica Lanterna Verde - Oro/Rame",
+    title: "Batteria Energetica Lanterna Verde | Oro/Rame",
     category: "cosplay",
     images: ["images/greenlantern1.jpg", "images/greenlantern2.jpg", "images/greenlantern3.jpg", "images/greenlantern4.jpg"]
   },
   {
-    title: "Macca The Gator - Gta 6 Mascotte",
+    title: "Macca The Gator | Gta 6 Mascotte",
     category: "decorativi",
     images: ["images/maccathegator1.jpg", "images/maccathegator2.jpg", "images/maccathegator3.jpg", "images/maccathegator4.jpg"]
   },
   {
-    title: "Statuetta Ada Wong - Resident Evil (17 Cm)",
+    title: "Statuetta Ada Wong | Resident Evil (17 Cm)",
     category: "decorativi",
     images: ["images/adawong1.jpg", "images/adawong2.jpg", "images/adawong3.jpg", "images/adawong4.jpg", "images/adawong5.jpg"]
   },
   {
-    title: "Statua Silente - Harry Potter (45 Cm)",
+    title: "Statua Silente | Harry Potter (45 Cm)",
     category: "decorativi",
+    featured: true,
     images: ["images/dumbledore1.jpg", "images/dumbledore2.jpg", "images/dumbledore3.jpg", "images/dumbledore4.jpg", "images/dumbledore5.jpg"]
   },
   {
     title: "Funko Pop Personalizzati",
     category: "decorativi",
-    featured: true,
     images: ["images/customfunkosecond1.jpg", "images/customfunkosecond2.jpg", "images/customfunkosecond3.jpg"]
+  },
+  {
+    title: "Fermalibro Deadpool",
+    category: "fermalibri",
+    images: ["images/deadpoolbooknook1.JPG", "images/deadpoolbooknook2.JPG", "images/deadpoolbooknook3.JPG"]
+  },
+  {
+    title: "Busto Dottor Destino / Dr Doom",
+    category: "decorativi",
+    featured: true,
+    images: ["images/drdoombust1.jpg", "images/drdoombust2.jpg", "images/drdoombust3.jpg"]
   },
 ];
