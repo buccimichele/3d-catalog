@@ -367,7 +367,7 @@ export const CREATIONS = [
     title: "Funko Pop Personalizzati",
     category: "decorativi",
     featured: true,
-    images: ["images/customfunkograndfathers1.jpg", "images/customfunkograndfathers2.jpg", "images/customfunkograndfathers3.jpg"]
+    images: ["images/customfunko1.jpg", "images/customfunko2.jpg", "images/customfunko3.jpg"]
   },
   {
     title: "Poster Spider-man Venom 3D 85CM",
@@ -475,5 +475,16 @@ export const CREATIONS = [
     title: "Statuetta Ada Wong - Resident Evil (17 Cm)",
     category: "decorativi",
     images: ["images/adawong1.jpg", "images/adawong2.jpg", "images/adawong3.jpg", "images/adawong4.jpg", "images/adawong5.jpg"]
+  },
+  {
+    title: "Statua Silente - Harry Potter (45 Cm)",
+    category: "decorativi",
+    images: ["images/dumbledore1.jpg", "images/dumbledore2.jpg", "images/dumbledore3.jpg", "images/dumbledore4.jpg", "images/dumbledore5.jpg"]
+  },
+  {
+    title: "Funko Pop Personalizzati",
+    category: "decorativi",
+    featured: true,
+    images: ["images/customfunkosecond1.jpg", "images/customfunkosecond2.jpg", "images/customfunkosecond3.jpg"]
   },
 ];

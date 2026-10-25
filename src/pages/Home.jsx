@@ -4,15 +4,19 @@ import Aurora from "../components/Aurora";
 import Featured from "../components/Featured";
 import CatalogSearch from "../components/CatalogSearch";
 import Gallery from "../components/Gallery";
+import Pagination from "../components/Pagination";
 import Lightbox from "../components/Lightbox";
 import Footer from "../components/Footer";
 import { CATEGORIES, CREATIONS } from "../data";
 import { slugify } from "../utils/slug";
 
+const PAGE_SIZE = 20;
+
 export default function Home() {
   const [activeCategory, setActiveCategory] = useState("all");
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedItem, setSelectedItem] = useState(null);
+  const [page, setPage] = useState(1);
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
@@ -41,6 +45,18 @@ export default function Home() {
       .reverse();
   }, [activeCategory, searchTerm]);
 
+  useEffect(() => {
+    setPage(1);
+  }, [activeCategory, searchTerm]);
+
+  const totalPages = Math.ceil(filteredCreations.length / PAGE_SIZE);
+  const pagedCreations = filteredCreations.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+
+  const changePage = (n) => {
+    setPage(n);
+    document.getElementById("gallery")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <header className="hero" id="top">
@@ -65,7 +81,8 @@ export default function Home() {
       />
 
       <main className="gallery" id="gallery">
-        <Gallery items={filteredCreations} onSelect={openItem} />
+        <Gallery items={pagedCreations} onSelect={openItem} />
+        <Pagination page={page} totalPages={totalPages} onPageChange={changePage} />
       </main>
 
       <Footer />

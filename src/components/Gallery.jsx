@@ -113,7 +113,7 @@ export default function Gallery({ items, onSelect }) {
   return (
     <>
       {items.map((item) => (
-        <GalleryCard key={item.title} item={item} onSelect={onSelect} />
+        <GalleryCard key={item.id || `${item.title}-${item.images?.[0] || ""}`} item={item} onSelect={onSelect} />
       ))}
     </>
   );
