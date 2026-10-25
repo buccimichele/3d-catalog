@@ -490,7 +490,7 @@ export const CREATIONS = [
   {
     title: "Fermalibro Deadpool",
     category: "fermalibri",
-    images: ["images/deadpoolbooknook1.JPG", "images/deadpoolbooknook2.JPG", "images/deadpoolbooknook3.JPG"]
+    images: ["images/deadpoolbooknook1.jpg", "images/deadpoolbooknook2.jpg", "images/deadpoolbooknook3.jpg"]
   },
   {
     title: "Busto Dottor Destino / Dr Doom",
