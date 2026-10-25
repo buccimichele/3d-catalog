@@ -477,7 +477,7 @@ export const CREATIONS = [
     images: ["images/adawong1.jpg", "images/adawong2.jpg", "images/adawong3.jpg", "images/adawong4.jpg", "images/adawong5.jpg"]
   },
   {
-    title: "Statua Silente | Harry Potter (45 Cm)",
+    title: "Statua Albus Silente | Harry Potter (45 Cm)",
     category: "decorativi",
     featured: true,
     images: ["images/dumbledore1.jpg", "images/dumbledore2.jpg", "images/dumbledore3.jpg", "images/dumbledore4.jpg", "images/dumbledore5.jpg"]
