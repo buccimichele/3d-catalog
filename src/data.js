@@ -494,7 +494,7 @@ export const CREATIONS = [
     images: ["images/drdoombust1.jpg", "images/drdoombust2.jpg", "images/drdoombust3.jpg"]
   },
   {
-    title: "Funko Pop Personalizzati",
+    title: "Funko Pop Personalizzato",
     category: "funko",
     images: ["images/customfunkothird1.jpg", "images/customfunkothird2.jpg", "images/customfunkothird3.jpg"]
   },
@@ -504,7 +504,7 @@ export const CREATIONS = [
     images: ["images/customfunkofourth1.jpg"]
   },
   {
-    title: "Funko Pop Personalizzati",
+    title: "Funko Pop Personalizzato",
     category: "funko",
     images: ["images/customfunkofifth1.jpg", "images/customfunkofifth2.jpg", "images/customfunkofifth3.jpg"]
   },
