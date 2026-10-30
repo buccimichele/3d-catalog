@@ -508,4 +508,9 @@ export const CREATIONS = [
     category: "funko",
     images: ["images/customfunkofifth1.jpg", "images/customfunkofifth2.jpg", "images/customfunkofifth3.jpg"]
   },
+  {
+    title: "Statua Supergirl (42 Cm)",
+    category: "decorativi",
+    images: ["images/supergirl1.jpg", "images/supergirl2.jpg", "images/supergirl3.jpg", "images/supergirl4.jpg", "images/supergirl5.jpg", "images/supergirl6.jpg", "images/supergirl7.jpg"]
+  },
 ];
