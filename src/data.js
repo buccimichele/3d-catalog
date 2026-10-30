@@ -23,10 +23,10 @@ export const CATEGORIES = [
   { id: "fermalibri", label: "Fermalibri" },
   { id: "animali", label: "Animali" },
   { id: "calcio", label: "Calcio" },
-  { id: "connectibles", label: "Connectibles" },
   { id: "lifesize", label: "Life Size" },
   { id: "cosplay", label: "Cosplay" },
-  { id: "fidget", label: "Fidget" }
+  { id: "fidget", label: "Fidget" },
+  { id: "funko", label: "Funko" }
 ];
 
 export const CREATIONS = [
@@ -89,11 +89,6 @@ export const CREATIONS = [
     title: "Statuetta Calopsitta",
     category: "animali",
     images: ["images/calopsitta1.jpg", "images/calopsitta2.JPG", "images/calopsitta3.JPG"]
-  },
-  {
-    title: "Kratos | Connectibles",
-    category: "connectibles",
-    images: ["images/connectibleskratos1.png", "images/connectibleskratos2.JPG", "images/connectibleskratos3.JPG"]
   },
   {
     title: "Master Sword Distrutta | The legend of Zelda Tears of the Kingdom",
@@ -365,7 +360,7 @@ export const CREATIONS = [
   },
   {
     title: "Funko Pop Personalizzati",
-    category: "decorativi",
+    category: "funko",
     featured: true,
     images: ["images/customfunko1.jpg", "images/customfunko2.jpg", "images/customfunko3.jpg"]
   },
@@ -443,7 +438,7 @@ export const CREATIONS = [
   },
   {
     title: "Guts Berserker Armor Funko Pop",
-    category: "decorativi",
+    category: "funko",
     images: ["images/gutsfunko1.jpg", "images/gutsfunko2.jpg", "images/gutsfunko3.jpg"]
   },
   {
@@ -484,7 +479,7 @@ export const CREATIONS = [
   },
   {
     title: "Funko Pop Personalizzati",
-    category: "decorativi",
+    category: "funko",
     images: ["images/customfunkosecond1.jpg", "images/customfunkosecond2.jpg", "images/customfunkosecond3.jpg"]
   },
   {
@@ -497,5 +492,20 @@ export const CREATIONS = [
     category: "decorativi",
     featured: true,
     images: ["images/drdoombust1.jpg", "images/drdoombust2.jpg", "images/drdoombust3.jpg"]
+  },
+  {
+    title: "Funko Pop Personalizzati",
+    category: "funko",
+    images: ["images/customfunkothird1.jpg", "images/customfunkothird2.jpg", "images/customfunkothird3.jpg"]
+  },
+  {
+    title: "Funko Pop Personalizzati",
+    category: "funko",
+    images: ["images/customfunkofourth1.jpg"]
+  },
+  {
+    title: "Funko Pop Personalizzati",
+    category: "funko",
+    images: ["images/customfunkofifth1.jpg", "images/customfunkofifth2.jpg", "images/customfunkofifth3.jpg"]
   },
 ];
