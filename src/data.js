@@ -454,7 +454,7 @@ export const CREATIONS = [
   {
     title: "Anello Lanterna Verde",
     category: "cosplay",
-    images: ["images/anellolanternaquarto1.jpg", "images/anellolanternaquarto2.jpg"]
+    images: ["images/anellolanternaquarto1.jpg", "images/anellolanternaquarto2.jpg", "images/anellolanternaquarto3.jpg"]
   },
   {
     title: "Batteria Energetica Lanterna Verde | Oro/Rame",
@@ -512,5 +512,10 @@ export const CREATIONS = [
     title: "Statua Supergirl (42 Cm)",
     category: "decorativi",
     images: ["images/supergirl1.jpg", "images/supergirl2.jpg", "images/supergirl3.jpg", "images/supergirl4.jpg", "images/supergirl5.jpg", "images/supergirl6.jpg", "images/supergirl7.jpg"]
+  },
+  {
+    title: "Occhiali Ragnatela a Tema Hallowen",
+    category: "cosplay",
+    images: ["images/halloweenglasses1.jpg"]
   },
 ];
