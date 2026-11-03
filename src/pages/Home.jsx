@@ -8,7 +8,7 @@ import Pagination from "../components/Pagination";
 import Lightbox from "../components/Lightbox";
 import Footer from "../components/Footer";
 import { CATEGORIES, CREATIONS } from "../data";
-import { slugify } from "../utils/slug";
+import { itemSlug } from "../utils/slug";
 
 const PAGE_SIZE = 20;
 
@@ -22,13 +22,13 @@ export default function Home() {
   useEffect(() => {
     const slug = searchParams.get("prodotto");
     if (!slug) return;
-    const match = CREATIONS.find((c) => slugify(c.title) === slug);
+    const match = CREATIONS.find((c) => itemSlug(c, CREATIONS) === slug);
     if (match) setSelectedItem(match);
   }, []);
 
   const openItem = (item) => {
     setSelectedItem(item);
-    setSearchParams({ prodotto: slugify(item.title) }, { replace: true });
+    setSearchParams({ prodotto: itemSlug(item, CREATIONS) }, { replace: true });
   };
 
   const closeItem = () => {
