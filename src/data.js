@@ -528,7 +528,6 @@ export const CREATIONS = [
   {
     title: "Calendario dell'Avvento con Caduta Dolci",
     category: "funzionali",
-    featured: true,
     images: ["images/calendarioavvento1.jpg", "images/calendarioavvento2.jpg", "images/calendarioavvento3.jpg", "images/calendarioavvento4.jpg", "images/calendarioavvento5.jpg", "images/calendarioavvento6.jpg"]
   },
 ];
