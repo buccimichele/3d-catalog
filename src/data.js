@@ -511,11 +511,24 @@ export const CREATIONS = [
   {
     title: "Statua Supergirl (42 Cm)",
     category: "decorativi",
+    featured: true,
     images: ["images/supergirl1.jpg", "images/supergirl2.jpg", "images/supergirl3.jpg", "images/supergirl4.jpg", "images/supergirl5.jpg", "images/supergirl6.jpg", "images/supergirl7.jpg"]
   },
   {
     title: "Occhiali Ragnatela a Tema Hallowen",
     category: "cosplay",
     images: ["images/halloweenglasses1.jpg"]
+  },
+  {
+    title: "Statua Loki | One Piece (38 Cm)",
+    category: "decorativi",
+    featured: true,
+    images: ["images/lokionepiece1.jpg", "images/lokionepiece2.jpg", "images/lokionepiece3.jpg", "images/lokionepiece4.jpg", "images/lokionepiece5.jpg", "images/lokionepiece6.jpg", "images/lokionepiece7.jpg"]
+  },
+  {
+    title: "Calendario dell'Avvento con Caduta Dolci",
+    category: "funzionali",
+    featured: true,
+    images: ["images/calendarioavvento1.jpg", "images/calendarioavvento2.jpg", "images/calendarioavvento3.jpg", "images/calendarioavvento4.jpg", "images/calendarioavvento5.jpg", "images/calendarioavvento6.jpg"]
   },
 ];
