@@ -285,7 +285,7 @@ export const CREATIONS = [
     ]
   },
   {
-    title: "Life Size Insomniac Spider-Man",
+    title: "Life Size Insomniac Spider-Man (178 Cm)",
     category: "lifesize",
     featured: true,
     images: [
@@ -533,11 +533,10 @@ export const CREATIONS = [
   {
     title: "Travis Scott Cactus Jack Logo (20 Cm)",
     category: "decorativi",
-    featured: true,
     images: ["images/cactusjacklogo1.jpg"]
   },
   {
-    title: "Life Size Luffy | One Piece",
+    title: "Life Size Luffy | One Piece (195 Cm)",
     category: "lifesize",
     featured: true,
     images: ["images/Luffylifesize1.jpg", "images/Luffylifesize2.jpg", "images/Luffylifesize3.jpg", "images/Luffylifesize4.jpg", "images/Luffylifesize5.jpg", "images/Luffylifesize6.jpg", "images/Luffylifesize7.jpg","images/Luffylifesize8.jpg", "images/Luffylifesize9.jpg", "images/Luffylifesize10.jpg", "images/Luffylifesize11.jpg", "images/Luffylifesize12.jpg", "images/Luffylifesize13.jpg", "images/Luffylifesize14.jpg"]
