@@ -530,4 +530,16 @@ export const CREATIONS = [
     category: "funzionali",
     images: ["images/calendarioavvento1.jpg", "images/calendarioavvento2.jpg", "images/calendarioavvento3.jpg", "images/calendarioavvento4.jpg", "images/calendarioavvento5.jpg", "images/calendarioavvento6.jpg"]
   },
+  {
+    title: "Travis Scott Cactus Jack Logo (20 Cm)",
+    category: "decorativi",
+    featured: true,
+    images: ["images/cactusjacklogo1.jpg"]
+  },
+  {
+    title: "Life Size Luffy | One Piece",
+    category: "lifesize",
+    featured: true,
+    images: ["images/Luffylifesize1.jpg", "images/Luffylifesize2.jpg", "images/Luffylifesize3.jpg", "images/Luffylifesize4.jpg", "images/Luffylifesize5.jpg", "images/Luffylifesize6.jpg", "images/Luffylifesize7.jpg","images/Luffylifesize8.jpg", "images/Luffylifesize9.jpg", "images/Luffylifesize10.jpg", "images/Luffylifesize11.jpg", "images/Luffylifesize12.jpg", "images/Luffylifesize13.jpg"]
+  },
 ];
