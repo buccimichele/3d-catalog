@@ -540,6 +540,6 @@ export const CREATIONS = [
     title: "Life Size Luffy | One Piece",
     category: "lifesize",
     featured: true,
-    images: ["images/Luffylifesize1.jpg", "images/Luffylifesize2.jpg", "images/Luffylifesize3.jpg", "images/Luffylifesize4.jpg", "images/Luffylifesize5.jpg", "images/Luffylifesize6.jpg", "images/Luffylifesize7.jpg","images/Luffylifesize8.jpg", "images/Luffylifesize9.jpg", "images/Luffylifesize10.jpg", "images/Luffylifesize11.jpg", "images/Luffylifesize12.jpg", "images/Luffylifesize13.jpg"]
+    images: ["images/Luffylifesize1.jpg", "images/Luffylifesize2.jpg", "images/Luffylifesize3.jpg", "images/Luffylifesize4.jpg", "images/Luffylifesize5.jpg", "images/Luffylifesize6.jpg", "images/Luffylifesize7.jpg","images/Luffylifesize8.jpg", "images/Luffylifesize9.jpg", "images/Luffylifesize10.jpg", "images/Luffylifesize11.jpg", "images/Luffylifesize12.jpg", "images/Luffylifesize13.jpg", "images/Luffylifesize14.jpg"]
   },
 ];
