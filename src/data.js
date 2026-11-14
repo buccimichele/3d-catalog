@@ -559,6 +559,6 @@ export const CREATIONS = [
   {
     title: "Statuetta Leon Kennedy | Resident Evil (30 Cm)",
     category: "decorativi",
-    images: ["images/Leon1.jpg", "images/Leon2.jpg", "images/Leon3.jpg", "images/Leon4.jpg"]
+    images: ["images/Leon1.jpg", "images/Leon2.jpg", "images/Leon3.jpg", "images/Leon4.jpg", "images/Leon5.jpg"]
   },
 ];
