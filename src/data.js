@@ -561,4 +561,10 @@ export const CREATIONS = [
     category: "decorativi",
     images: ["images/Leon1.jpg", "images/Leon2.jpg", "images/Leon3.jpg", "images/Leon4.jpg", "images/Leon5.jpg"]
   },
+  {
+    title: "Statua Spongebob Squarepants (40 Cm)",
+    category: "decorativi",
+    featured: true,
+    images: ["images/spongebob1.jpg", "images/spongebob2.jpg", "images/spongebob3.jpg", "images/spongebob4.jpg", "images/spongebob5.jpg", "images/spongebob6.jpg", "images/spongebob7.jpg", "images/spongebob8.jpg"]
+  },
 ];
