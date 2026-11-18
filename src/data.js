@@ -567,4 +567,10 @@ export const CREATIONS = [
     featured: true,
     images: ["images/spongebob1.jpg", "images/spongebob2.jpg", "images/spongebob3.jpg", "images/spongebob4.jpg", "images/spongebob5.jpg", "images/spongebob6.jpg", "images/spongebob7.jpg", "images/spongebob8.jpg"]
   },
+  {
+    title: "Statua Bagy | One Piece (20 Cm)",
+    category: "decorativi",
+    featured: true,
+    images: ["images/bagy1.jpg", "images/bagy2.jpg", "images/bagy3.jpg", "images/bagy4.jpg", "images/bagy5.jpg", "images/bagy6.jpg"]
+  },
 ];
